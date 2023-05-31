@@ -8,6 +8,7 @@ import {
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import assets from '../assets/cv-porfolio.pdf'
 const Banner = () => {
   return (
     <section
@@ -83,6 +84,7 @@ const Banner = () => {
             }}
             className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
               <button className="btn btn-lg">Contact Me</button>
+              <button className="btn btn-lg"><a href={assets} >Descargar CV</a></button>
             </motion.div>
             <motion.div
             variants={fadeIn('up',0.3)} 
